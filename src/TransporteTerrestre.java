@@ -9,6 +9,7 @@ public class TransporteTerrestre implements ITransporteStrategy {
     public void operarTransporte(Encomenda encomenda) {
         if (isTransportadoraLocal(encomenda.distanciaEntrega)){
             System.out.println("Transporte terrestre pronto para realizar a entrega.");
+            return;
         }
         System.out.println("Somente entregas para transportadoras locais.");
     }

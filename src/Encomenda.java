@@ -13,6 +13,4 @@ public class Encomenda {
         this.isAreaMetropolitana = isAreaMetropolitana;
     }
 
-    public Encomenda() {
-    }
 }

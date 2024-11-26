@@ -9,6 +9,7 @@ public class Drones implements ITransporteStrategy{
     public void operarTransporte(Encomenda encomenda) {
         if(encomenda.isAreaMetropolitana && encomenda.dimensao < limiteDimensaoEncomenda){
             System.out.println("Drone pronto para realizar a entrega.");
+            return;
         }
         System.out.println("Área fora da entrega permitida ou dimensão do pacote maior do que o limite definido para o drone.");
     }
